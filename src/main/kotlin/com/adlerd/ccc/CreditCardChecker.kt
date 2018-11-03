@@ -1,4 +1,8 @@
-class CreditNumCheck {
+package com.adlerd.ccc
+
+import javafx.application.Application
+
+class CreditCardChecker {
     /** Return true if the card number is valid  */
     fun isValid(number: Long): Boolean {
         return (sumOfDoubleEvenPlace(number) + sumOfOddPlace(number)) % 10 == 0
@@ -56,5 +60,13 @@ class CreditNumCheck {
         }
         val nums = cardNumbers.substring(0, k - 1)
         return nums.toLong()
+    }
+
+
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            Application.launch(CreditCardCheckerGUI::class.java)
+        }
     }
 }
