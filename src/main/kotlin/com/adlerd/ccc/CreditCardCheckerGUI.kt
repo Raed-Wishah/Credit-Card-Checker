@@ -41,7 +41,8 @@ class CreditCardCheckerGUI : Application() {
         cardField.prefWidth = 200.0
         cardField.promptText = "Enter card number here..."
         cardField.background = selected
-        root.children.addAll(cardField, title, close, min)
+//        root.children.addAll(cardField, title, close, min)
+        root.children.addAll(cardField, close, min)
         root.snapPositionX(10.0)
         root.snapPositionY(10.0)
 
@@ -50,7 +51,8 @@ class CreditCardCheckerGUI : Application() {
         scene.fill = Color.TRANSPARENT
         stage.initStyle(StageStyle.TRANSPARENT)
         stage.isResizable = false
-        stage.title = title.text
+//        stage.title = title.text
+        stage.title = ""
         stage.scene = scene
         stage.show()
 

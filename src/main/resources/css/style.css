@@ -1,10 +1,10 @@
-/*.root {*/
-/*-fx-background-color: transparent;*/
-/*-fx-background-image: url("../ui/card.png");*/
-/*-fx-background-repeat: stretch;*/
-/*-fx-background-size: 480 320;*/
-/*-fx-background-position: center center;*/
-/*}*/
+.root {
+  -fx-background-color: transparent;
+  -fx-background-image: url("../ui/card.png");
+  -fx-background-repeat: stretch;
+  -fx-background-size: 480 320;
+  -fx-background-position: center center;
+}
 
 #close {
   -fx-background-color: transparent;
